@@ -1,0 +1,14 @@
+# fly.toml app configuration file generated for discord-music-nore on 2023-07-14T12:51:08+07:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = "discord-music-nore"
+primary_region = "sin"
+
+[http_service]
+  internal_port = 3000
+  force_https = true
+  auto_stop_machines = false
+  auto_start_machines = true
+  min_machines_running = 0
